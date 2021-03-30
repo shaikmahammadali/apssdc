@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">timedate</string>
+    <string-array name="Departments">
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+        <item>CSE and IT</item>
+        <item>Mechanical</item>
+
+    </string-array>
+</resources>

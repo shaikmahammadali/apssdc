@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Registeration form"
+                android:gravity="center"
+                android:background="#C8BD5C"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginBottom="40dp"
+                android:textColor="#F61A0A"
+
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter User name"
+                android:singleLine="true"
+                android:background="#FFC8BD5C"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/user_name"
+
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:background="#FFC8BD5C"
+                android:id="@+id/email"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Email Id"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:background="#FFC8BD5C"
+                android:id="@+id/phone"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter Mobile number"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:id="@+id/password"
+                android:layout_marginBottom="15dp"
+                android:background="#FFC8BD5C"
+                android:hint="Enter password"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFC8BD5C"
+                android:id="@+id/address"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:hint="Enter Address"/>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male"
+                    android:layout_marginRight="20dp"
+                    android:text="Male"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female"
+                    android:text="Female"/>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/java"
+                    android:text="Java" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/python"
+                    android:layout_height="wrap_content"
+                    android:text="Python"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c"
+                    android:text="C"/>
+            </LinearLayout>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp" />
+            <SeekBar
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:max="100"
+                android:progress="40"
+                />
+
+            <ToggleButton
+                android:id="@+id/toggle"
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textOff="off"
+                android:textOn="On" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_thumb_up_24"
+                android:onClick="showdata"
+                android:id="@+id/image_button"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+</layout>
