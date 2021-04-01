@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">myrecyclerview</string>
+    <string-array name="Titles">
+        <item>shaik mahammad ali</item>
+        <item>anuradha</item>
+        <item>charishma</item>
+        <item>pavani</item>
+        <item>shaik mahammad ali</item>
+        <item>anuradha</item>
+        <item>charishma</item>
+        <item>pavani</item>
+        <item>shaik mahammad ali</item>
+        <item>anuradha</item>
+        <item>charishma</item>
+        <item>pavani</item>
+    </string-array>
+    <string-array name="subtitles">
+        <item>Railway kodur</item>
+        <item>madanpalli</item>
+        <item>chittor</item>
+        <item>Tirupati</item>
+         <item>Railway kodur</item>
+        <item>madanpalli</item>
+        <item>chittor</item>
+        <item>Tirupati</item>
+         <item>Railway kodur</item>
+        <item>madanpalli</item>
+        <item>chittor</item>
+        <item>Tirupati</item>
+
+    </string-array>
+</resources>
