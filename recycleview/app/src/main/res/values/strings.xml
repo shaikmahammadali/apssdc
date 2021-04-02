@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">recycleview</string>
+    <string name="shaik_mahammad_ali">shaik mahammad ali</string>
+    <string name="_17ak1a0556">17AK1A0556</string>
+    <string name="todo">TODO</string>
+    <string-array name="name">
+        <item>shaik mahammad ali</item>
+        <item>Niveda</item>
+        <item>Charishma</item>
+        <item>Anuradha</item>
+        <item>pavani</item>
+        <item>Keerthi reddy</item>
+        <item>Indu Priya</item>
+        <Item>vinay</Item>
+        <item>vidhyanath</item>
+        <item>giri prasad</item>
+    </string-array>
+    <string-array name="roll_number">
+        <item>17AK1A0556</item>
+        <item>17AK1A0557</item>
+        <item>17AK1A0558</item>
+        <item>17AK1A0559</item>
+        <item>17AK1A0560</item>
+        <item>17AK1A0561</item>
+        <item>17AK1A0562</item>
+        <item>17AK1A0563</item>
+        <item>17AK1A0564</item>
+        <item>17AK1A0565</item>
+    </string-array>
+</resources>

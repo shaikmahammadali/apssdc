@@ -9,8 +9,11 @@ import android.widget.TextView;
 
 import java.util.Stack;
 
+import static java.sql.DriverManager.println;
+
 public class MainActivity extends AppCompatActivity {
     TextView exp,res;
+    String result,expression;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,12 +163,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equal(View view) {
-        String expression=exp.getText().toString();
+        expression=exp.getText().toString();
         int n =expression.length()-1;
         char lastdigit=expression.charAt(n);
         if (Character.isDigit(lastdigit))
         {
-            String result = String.valueOf(evaluate(expression)) ;
+            result = String.valueOf(evaluate(expression)) ;
             res.setText(result);
         }
         else
@@ -244,24 +247,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void backspace(View view) {
-        String temp=exp.getText().toString();
-        if (!temp.isEmpty())
-        {int n =temp.length()-1;
-        exp.setText(temp.substring(0,n));}
-        if (exp.getText().toString().isEmpty())
-            res.setText("");
 
-        String expression=exp.getText().toString();
-        int n =expression.length()-1;
-        char lastdigit=expression.charAt(n);
-        if (Character.isDigit(lastdigit))
+        expression=exp.getText().toString();
+        int n = expression.length();
+
+
+        if (expression.isEmpty() || n==1)
+            res.setText("");
+        else if (!expression.isEmpty())
         {
-            String result = String.valueOf(evaluate(expression)) ;
-            res.setText(result);
+            expression=expression.substring(0, n);
+            exp.setText(expression);
         }
-        else
-        {   res.setText("");
+        char lastdigit;
+        if (expression.length()>0) {
+            lastdigit = expression.charAt(n - 1);
+            if (Character.isDigit(lastdigit)) {
+                result = String.valueOf(evaluate(expression));
+                res.setText(result);
+            } else {
+                res.setText("");
             }
+        }
     }
 
     public void five(View view) {
