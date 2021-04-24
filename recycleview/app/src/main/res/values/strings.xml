@@ -3,7 +3,7 @@
     <string name="shaik_mahammad_ali">shaik mahammad ali</string>
     <string name="_17ak1a0556">17AK1A0556</string>
     <string name="todo">TODO</string>
-    <string-array name="name">
+        <string-array name="name">
         <item>shaik mahammad ali</item>
         <item>Niveda</item>
         <item>Charishma</item>
